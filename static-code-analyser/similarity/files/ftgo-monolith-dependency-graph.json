@@ -1,0 +1,339 @@
+{
+    "OrderNotFoundException": [
+      
+    ],
+    "ConsumerService": [
+      "Money",
+      "PersonName",
+      "Consumer",
+      "ConsumerRepository"
+    ],
+    "ActionType": [
+      
+    ],
+    "TicketController": [
+      "OrderAcceptance",
+      "OrderService"
+    ],
+    "Address": [
+      
+    ],
+    "OrderDetails": [
+      "Money"
+    ],
+    "GetRestaurantResponse": [
+      
+    ],
+    "RestaurantServiceDomainConfiguration": [
+      "DomainConfiguration"
+    ],
+    "CourierServiceConfiguration": [
+      "CourierRepository",
+      "DomainConfiguration"
+    ],
+    "OrderRevision": [
+      
+    ],
+    "InvalidMenuItemIdException": [
+      
+    ],
+    "OrderController": [
+      "Order",
+      "OrderRepository",
+      "OrderRevision",
+      "CreateOrderRequest",
+      "CreateOrderResponse",
+      "OrderAcceptance",
+      "ReviseOrderRequest",
+      "OrderNotFoundException",
+      "OrderService"
+    ],
+    "LineItemQuantityChange": [
+      "Money"
+    ],
+    "RestaurantMother": [
+      "Money",
+      "MenuItem",
+      "Restaurant",
+      "RestaurantMenu"
+    ],
+    "NotYetImplementedException": [
+      
+    ],
+    "OrderDetailsMother": [
+      "Money",
+      "MenuItemIdAndQuantity",
+      "RestaurantMother"
+    ],
+    "ConsumerWebConfiguration": [
+      "ConsumerConfiguration"
+    ],
+    "RestaurantRepository": [
+      
+    ],
+    "Consumer": [
+      "Money",
+      "PersonName"
+    ],
+    "MoneySerializationTest": [
+      
+    ],
+    "RestaurantController": [
+      "Restaurant",
+      "RestaurantService",
+      "CreateRestaurantRequest"
+    ],
+    "OrderMinimumNotMetException": [
+      
+    ],
+    "CreateConsumerRequest": [
+      "PersonName"
+    ],
+    "CreateRestaurantResponse": [
+      
+    ],
+    "MoneyTest": [
+      
+    ],
+    "Order": [
+      "Money",
+      "UnsupportedStateTransitionException",
+      "OrderState"
+    ],
+    "UnsupportedStateTransitionException": [
+      
+    ],
+    "CreateConsumerResponse": [
+      
+    ],
+    "CommonConfiguration": [
+      
+    ],
+    "MenuItemDTO": [
+      "Money"
+    ],
+    "CreateRestaurantRequest": [
+      "Address"
+    ],
+    "OrderConfiguration": [
+      "ConsumerService",
+      "CourierRepository",
+      "DomainConfiguration",
+      "OrderRepository",
+      "RestaurantRepository"
+    ],
+    "RestaurantServiceConfiguration": [
+      "CommonSwaggerConfiguration"
+    ],
+    "ConsumerController": [
+      "CreateConsumerRequest",
+      "CreateConsumerResponse",
+      "ConsumerService"
+    ],
+    "CourierAvailability": [
+      
+    ],
+    "OptimisticOfflineLockException": [
+      
+    ],
+    "CourierService": [
+      "Address",
+      "PersonName",
+      "Courier",
+      "CourierRepository"
+    ],
+    "CourierController": [
+      "CourierAvailability",
+      "CreateCourierRequest",
+      "CreateCourierResponse",
+      "CourierService",
+      "Courier"
+    ],
+    "OrderWebConfiguration": [
+      "OrderServiceWithRepositoriesConfiguration"
+    ],
+    "CourierRepository": [
+      
+    ],
+    "OrderRepository": [
+      
+    ],
+    "RestaurantMenuDTO": [
+      
+    ],
+    "PaymentInformation": [
+      
+    ],
+    "OrderService": [
+      "ConsumerService",
+      "MenuItemIdAndQuantity"
+    ],
+    "OrderState": [
+      
+    ],
+    "AbstractEndToEndTests": [
+      "Address",
+      "Money",
+      "MoneyModule",
+      "PersonName",
+      "CreateConsumerRequest",
+      "CourierAvailability",
+      "CreateCourierRequest",
+      "CreateOrderRequest",
+      "OrderAcceptance",
+      "ReviseOrderRequest",
+      "CreateRestaurantRequest",
+      "MenuItemDTO",
+      "RestaurantMenuDTO"
+    ],
+    "ConsumerRepository": [
+      
+    ],
+    "CreateCourierRequest": [
+      "Address",
+      "PersonName"
+    ],
+    "OrderServiceConfiguration": [
+      "CommonSwaggerConfiguration",
+      "OrderConfiguration",
+      "OrderWebConfiguration"
+    ],
+    "Action": [
+      
+    ],
+    "CommonSwaggerConfiguration": [
+      
+    ],
+    "CreateOrderRequest": [
+      
+    ],
+    "FtgoTestUtil": [
+      
+    ],
+    "FtgoApplicationTest": [
+      "ConsumerServiceConfiguration",
+      "AbstractEndToEndTests",
+      "OrderServiceConfiguration",
+      "RestaurantServiceConfiguration"
+    ],
+    "CommonJsonMapperInitializer": [
+      
+    ],
+    "DomainConfiguration": [
+      "CommonConfiguration"
+    ],
+    "CourierWebConfiguration": [
+      "CourierServiceConfiguration"
+    ],
+    "RestaurantNotFoundException": [
+      
+    ],
+    "MoneyModule": [
+      
+    ],
+    "Money": [
+      
+    ],
+    "OrderLineItems": [
+      "Money"
+    ],
+    "CreateCourierResponse": [
+      
+    ],
+    "ConsumerNotFoundException": [
+      
+    ],
+    "OrderServiceWithRepositoriesConfiguration": [
+      
+    ],
+    "ConsumerConfiguration": [
+      "DomainConfiguration"
+    ],
+    "CreateOrderResponse": [
+      
+    ],
+    "ConsumerVerificationFailedException": [
+      
+    ],
+    "Courier": [
+      "Address",
+      "PersonName"
+    ],
+    "OrderControllerTest": [
+      "MoneyModule",
+      "OrderRepository",
+      "OrderDetailsMother",
+      "OrderService"
+    ],
+    "RevisedOrder": [
+      "LineItemQuantityChange",
+      "Order"
+    ],
+    "RestaurantMenu": [
+      
+    ],
+    "PersonName": [
+      
+    ],
+    "WaitForMySql": [
+      
+    ],
+    "WaitForMySqlPlugin": [
+      
+    ],
+    "MenuItem": [
+      "Money"
+    ],
+    "RestaurantService": [
+      "MenuItem",
+      "Restaurant",
+      "RestaurantMenu",
+      "RestaurantRepository",
+      "CreateRestaurantRequest",
+      "RestaurantMenuDTO"
+    ],
+    "Plan": [
+      
+    ],
+    "OrderLineItemDTO": [
+      
+    ],
+    "ReviseOrderRequest": [
+      
+    ],
+    "OrderAcceptance": [
+      
+    ],
+    "ConsumerServiceConfiguration": [
+      "CommonSwaggerConfiguration",
+      "ConsumerWebConfiguration"
+    ],
+    "EndToEndTests": [
+      "AbstractEndToEndTests"
+    ],
+    "GetOrderResponse": [
+      "Money",
+      "Action"
+    ],
+    "MenuItemIdAndQuantity": [
+      
+    ],
+    "Restaurant": [
+      "Address"
+    ],
+    "FtgoApplicationMain": [
+      "ConsumerServiceConfiguration",
+      "OrderServiceConfiguration",
+      "RestaurantServiceConfiguration"
+    ],
+    "OrderLineItem": [
+      "Money"
+    ],
+    "GetConsumerResponse": [
+      "PersonName",
+      "CreateConsumerResponse"
+    ],
+    "DeliveryInformation": [
+      "Address"
+    ]
+  }
