@@ -24,10 +24,40 @@ for key, value in microservice_classes.items():
 
 # Common classes between monolith and microservice version
 common_classes = monolith_classes.intersection(all_microservice_classes)
+print(len(common_classes))
+
+# Remove classes from monolith_dg not present in microservices
+common_monolith_dg = {}
+for key, value in monolith_dg.items():
+    if key not in common_classes:
+        continue
+
+    classes = []
+    for clazz in value:
+        if (clazz in common_classes) and (clazz not in classes):
+            classes.append(clazz)
+
+    classes.sort()
+    common_monolith_dg[key] = classes
+
+# Final result - Microservice breakdown with only common classes
+print(json.dumps(common_monolith_dg))
+# print("Total classes in microservices including duplicates: ", count)
+print("Common classes (Total unique classes): ", len(common_classes))
+# print(common_classes)
+
+with open("./files/common_monolith_dependency_graph.json", "w") as f:
+    json.dump(common_monolith_dg, f)
+
+
+print("===============================================================================================================")
+print("===============================================================================================================")
+
+
 
 # Remove classes from microservices not present in monolith
 count = 0
-updated_microservice_classes = {}
+common_microservice_classes = {}
 for key, value in microservice_classes.items():
     classes = []
     for clazz in value:
@@ -37,17 +67,17 @@ for key, value in microservice_classes.items():
     count = count + len(classes)
 
     classes.sort()
-    updated_microservice_classes[key] = classes
+    common_microservice_classes[key] = classes
 
 
 # Final result - Microservice breakdown with only common classes
-print(json.dumps(updated_microservice_classes))
+print(json.dumps(common_microservice_classes))
 print("Total classes in microservices including duplicates: ", count)
 print("Common classes (Total unique classes): ", len(common_classes))
 # print(common_classes)
 
 with open("./files/refined_microservices.json", "w") as f:
-    json.dump(updated_microservice_classes, f)
+    json.dump(common_microservice_classes, f)
 
 
 
